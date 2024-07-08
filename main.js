@@ -10,3 +10,12 @@ document.querySelectorAll('.btnDetail').forEach(item => {
 
         let tombolModal = document.querySelector('.btnModal');
         tombolModal.click();
+
+        document.querySelector('.modalTitle').innerHTML = judul;
+        let image = document.createElement('img');
+        image.src = gambar;
+        image.classList.add('w-100');
+        document.querySelector('.modalImage').innerHTML = '';
+        document.querySelector('.modalImage').appendChild(image);
+        document.querySelector('.modalDeskripsi').innerHTML = deskripsi;
+        document.querySelector('.modalHarga').innerHTML = harga;
